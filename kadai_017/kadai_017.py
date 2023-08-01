@@ -10,8 +10,13 @@ class Human:
             print(f"{self.name}さんは、20歳未満なので大人ではありません。")
 
 
-tanaka = Human("tanaka", 20)
-tanaka.check_adult()
+members = [
+    Human("tanaka", 18),
+    Human("mori", 21),
+    Human("hayashi", 32),
+    Human("matuo", 45),
+    Human("koishi", 19),
+]
 
-mori = Human("mori", 19)
-mori.check_adult()
+for member in members:
+    member.check_adult()
